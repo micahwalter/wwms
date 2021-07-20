@@ -1,4 +1,5 @@
 # wwms
+
 Conserving What Would Micah Say
 
 ## Overview
@@ -19,18 +20,15 @@ Once you have SAM set up for your system and account you can test locally and de
 
 To test the Lambda function locally you will need [Docker](https://docs.docker.com/get-docker/) installed on your system. Once you have Docker installed and running all you need to do are the following two commands:
 
-    $ sam build
-    $ sam local start-api
-    
-Once you have the api up and running you should be able to go to http://127.0.0.1:3000/ and see the response in your browser.
+    > sam build
+    > sam local start-api
+
+Once you have the api up and running you should be able to go to `http://127.0.0.1:3000/` and see the response in your browser.
 
 ## Deploy to AWS
 
 To deploy to AWS all you need to do the first time is the following command:
 
-    $ sam deploy --guided
-        
-SAM will create a Cloud Formation template and build out the resources for you. Once it is done doing its thing you will receive a URL for the live API.    
-    
+    > sam deploy --guided
 
-
+SAM will create a Cloud Formation template and build out the resources for you. Once it is done doing its thing you will receive a URL for the live API.
